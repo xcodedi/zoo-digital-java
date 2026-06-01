@@ -1,9 +1,10 @@
 package br.edu.atitus.diego_meira.animais;
 
 import br.edu.atitus.diego_meira.comportamentos.Nado;
+import br.edu.atitus.diego_meira.comportamentos.Predacao;
 import br.edu.atitus.diego_meira.especies.Ave;
 
-public class Pinguim extends Ave implements Nado {
+public final class Pinguim extends Ave implements Nado, Predacao {
 
     public Pinguim(String nome, int idade, String corPenas) {
         super(nome, idade, corPenas);
@@ -11,17 +12,21 @@ public class Pinguim extends Ave implements Nado {
 
     @Override
     public void comer() {
-        this.comer("peixes");
+        this.comer("peixes e krill");
     }
 
     @Override
     public void emitirSom() {
-        IO.println(getNome() + " está grasnando");
+        IO.println(this.getNome() + " está grasnando!");
     }
 
     @Override
     public void nadar() {
-        IO.println(getNome() + " está nadando atrás de peixes");
+        IO.println(this.getNome() + " está nadando rapidamente entre os blocos de gelo!");
     }
-    
+
+    @Override
+    public void cacar() {
+        IO.println(this.getNome() + " está mergulhando para caçar krill!");
+    }
 }

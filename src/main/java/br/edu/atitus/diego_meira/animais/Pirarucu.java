@@ -4,29 +4,29 @@ import br.edu.atitus.diego_meira.comportamentos.Nado;
 import br.edu.atitus.diego_meira.comportamentos.Predacao;
 import br.edu.atitus.diego_meira.especies.Peixe;
 
-public final class Traira extends Peixe implements Nado, Predacao {
+public final class Pirarucu extends Peixe implements Nado, Predacao {
 
-    public Traira(String nome, int idade) {
+    public Pirarucu(String nome, int idade) {
         super(nome, idade, "Doce");
     }
 
     @Override
     public void comer() {
-        this.comer("lambaris e pequenos peixes");
+        this.comer("peixes menores e crustáceos");
     }
 
     @Override
     public void emitirSom() {
-        IO.println(this.getNome() + " está movimentando a água silenciosamente!");
+        IO.println(this.getNome() + " está subindo à superfície para respirar!");
     }
 
     @Override
     public void nadar() {
-        IO.println(this.getNome() + " está nadando entre a vegetação do rio!");
+        IO.println(this.getNome() + " está nadando pelos rios da Amazônia!");
     }
 
     @Override
     public void cacar() {
-        IO.println(this.getNome() + " está emboscando um lambari para se alimentar!");
+        IO.println(this.getNome() + " está caçando peixes menores no rio!");
     }
 }
