@@ -1,4 +1,3 @@
-.
 # Zoo Digital
 
 A Java Object-Oriented Programming (OOP) project developed to simulate a digital zoo. The application demonstrates core OOP concepts such as inheritance, abstraction, polymorphism, interfaces, upcasting, downcasting, static members, and command-line interaction.
@@ -113,7 +112,7 @@ Animal.getContador();
 
 ---
 
-## 🐾 Implemented Animals
+##  Implemented Animals
 
 ### Mammals
 
