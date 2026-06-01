@@ -220,10 +220,3 @@ This project was developed to practice:
 * Exception Handling
 
 ---
-
-## Author
-
-**Diego Meira**
-
-Software Development Student
-Passionate about Programming, Data Engineering, Cloud Computing, and Technology.
